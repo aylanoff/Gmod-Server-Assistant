@@ -1,13 +1,12 @@
 @echo off
-
+title Gmod Server Assistant
 color 0A
 
 type ascii.txt
 
 echo.
 echo Welcome to the gmod server assistant !
-echo Created by IparazzDev
-echo Compatible with Windows XP and newer versions.
+echo Version 1.0 created by IparazzDev
 echo.
 
 :choice
@@ -24,9 +23,9 @@ exit
 :install
 
 echo Installing...
-echo Please wait and don't close this window
-echo Creating a root folder...
+echo Please wait and don't close this window during the installation !
 echo Opening SteamCMD...
+steamcmd.exe +login anonymous +force_install_dir server/ +app_update 4020 validate +quit
 
 
 
